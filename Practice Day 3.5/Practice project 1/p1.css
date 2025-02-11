@@ -1,0 +1,387 @@
+.dashed-line {
+  border-top: 1px dashed #ddd;
+  margin: 1rem 0;
+}
+
+
+*/progress bar css*/ 
+
+
+.progress-bar {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.outer {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+
+}
+
+.inner {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: inset 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    inset -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.number {
+  font-weight: 900;
+  font-size: 27px;
+}
+
+circle {
+  fill: none;
+  stroke: red;
+  stroke-width: 10px;
+  stroke-dasharray: 439.8;
+  /*fill color */
+  stroke-dashoffset: 439.8;
+  /* reomve color full */
+
+}
+
+/* Different Stroke Colors for Each Progress Bar */
+.progress-1 circle {
+  stroke: red;
+  animation: anim-1 2s linear forwards;
+}
+
+.progress-2 circle {
+  stroke: rgb(135, 240, 135);
+  animation: anim-2 2s linear forwards;
+}
+
+.progress-3 circle {
+  stroke: orange;
+  animation: anim-3 2s linear forwards;
+}
+
+.progress-4 circle {
+  stroke: rgb(26, 29, 194);
+  animation: anim-4 2s linear forwards;
+}
+
+/* Global Animation Definitions */
+@keyframes anim-1 {
+  100% {
+    stroke-dashoffset: 57.2;
+  }
+}
+
+@keyframes anim-2 {
+  100% {
+    stroke-dashoffset: 21.5;
+  }
+}
+
+@keyframes anim-3 {
+  100% {
+    stroke-dashoffset: 43.98;
+  }
+}
+
+@keyframes anim-4 {
+  100% {
+    stroke-dashoffset: 87.96;
+  }
+}
+
+
+
+svg {
+  position: absolute;
+}
+
+
+
+.Program-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  color: white;
+  
+}
+
+
+
+.program-content 
+{
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  overflow:hidden;
+ 
+}
+
+
+.main-para-div
+{
+  margin-top: 100px;
+  margin-left:20px;
+}
+
+
+.Program-card-1
+{
+  position:relative;
+  overflow: hidden;
+  border-radius: 10px;
+
+}
+
+.program-content-1
+{
+  position:absolute;
+  border-radius: 10px;
+  top:50%;
+  left:4%;
+}
+
+.image-width
+{
+  width:400px;
+  height:400px;
+}
+
+
+
+.size
+{
+  width:400px;
+  height:230px;
+}
+
+.carousel-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.width-class {
+  width: 90%;
+}
+
+/*Specially for phone*/
+
+@media (max-width:768px) 
+{
+  .image-in-phone
+  {
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  .head-under-image
+  {
+    margin-top:6px;
+  }
+  
+  .icon-set
+  {
+    margin-left:10px;
+  }
+
+  .size
+{
+  width:350px;
+  height:230px;
+}
+
+}
+
+
+/* Tablet/Medium Screens */
+
+@media (min-width: 768px) {
+  .carousel-img {
+    height: 450px;
+  }
+
+  .width-class {
+    width: 82%;
+  }
+  
+  .image-width
+  {
+    width:1200px;
+    height:400px;
+  }
+
+}
+
+/* Desktop/Large Screens */
+@media (min-width: 1401px) {
+  .carousel-img {
+    height: 500px;
+  }
+
+  .width-class {
+    width: 67.5%;
+    max-width: 1440px;
+    /* Critical fix */
+  }
+
+
+  .Program-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    height: 300px;
+    width: 560px;
+    
+  }
+  
+  
+  
+  .program-content 
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset:0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow:hidden;
+    height: 300px;
+    width: 560px;
+    
+  }
+  
+  .image-width
+  {
+    width:1230px;
+    height:400px;
+  }
+
+}
+
+/* Extra Large Screens (Optional) */
+@media (min-width: 2000px) {
+  .width-class {
+    width: 51%;
+    max-width: 1600px;
+    
+  }
+
+  .Program-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    height: 300px;
+    width: 560px;
+    
+  }
+  
+  
+  
+  .program-content 
+  {
+    position: absolute;
+    top: 0;
+    left:10%;
+    inset:0;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow:hidden;
+    height: 300px;
+    width: 560px;
+    
+  }
+
+  .image-width
+  {
+    width:1230px;
+    height:400px;
+  }
+
+
+}
+
+
+.product-div
+{
+  border-radius: 10px;
+  background-color:white;
+  border:0.5px solid whitesmoke;
+}
+
+.accordion-button::after
+{
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/></svg>');
+  transition: all 0.5s;
+}
+
+.accordion-button:not(.collapsed)::after
+{
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16"><path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/></svg>');
+}
+
+
+.row.gx-3 
+{
+
+  height: 500px;
+  width:1000px;
+}
+  
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-item {
+  border-bottom: 2px dashed #ccc;
+}
+
+
+
+.phone-div
+{
+  background-color: #d8e9e2;
+  
+}
+
+.Email-div
+{
+  background-color: rgb(252, 244, 203);
+}
+
+.location-div
+{
+  background-color: rgb(196, 204, 255);
+}
+
+.name-input
+{
+  background-color:rgb(248, 247, 247);
+  border:none;
+  width:320px;
+  padding:15px;
+  border-radius:10px;
+}
+
+.social-media
+{
+  background-color: #f7f7f7;
+}
+
+.hok
+{
+  color:#cfcece;
+}
+
