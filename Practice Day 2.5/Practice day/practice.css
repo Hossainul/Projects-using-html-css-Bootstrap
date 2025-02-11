@@ -1,0 +1,363 @@
+*
+{
+    margin : 0px;
+    padding : 0px;
+}
+
+nav
+{   display: flex;
+    justify-content: space-around;
+    height: 690px;
+    text-wrap: wrap;
+    background-image: url(images/back\ image\ 1.png);
+}
+
+.menu-class
+{
+    list-style : none;
+    font-size: 25px;
+    color:rgb(238, 138, 101);
+    display: flex;
+    gap: 50px;
+    padding-top: 30px;
+}
+
+li:hover
+{
+    cursor: pointer;
+    color:green;
+}
+
+.icon
+{
+   position: relative;
+   height: fit-content;
+   padding-top: 20px;
+}
+
+.nav-image
+{
+   width: 80%;
+   margin-left: 70px;
+}
+
+.para-in-nav
+{
+    margin-top:223px;
+}
+
+.div-button
+{
+   font-size: 25px;
+   background-color:rgb(238, 138, 101);
+   border:none;
+   margin-left: 100px;
+   margin-top:12px;
+   padding:10px;
+   cursor: pointer;
+}
+
+.div-button:hover
+{
+    color:gray;
+    border-spacing: 12px;
+}
+
+
+.head-in-nav
+{
+    color:white;
+    font-size: 44px;
+}
+
+.para-in-nav
+{
+    color:rgb(238, 138, 101);
+    font-size: 23px;
+}
+
+
+.mid
+{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color:rgba(245, 240, 240, 0.562);
+    gap : 80px;
+    padding : 20px;
+}
+
+.mid-mid
+{   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap:40px;
+    margin-bottom: 40px;
+}
+
+
+.header-part
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header
+{
+    font-size: 50px;
+    margin-bottom:10px;
+}
+
+.para
+{
+   font-size : 19px;
+}
+
+.first-div
+{
+    border: 1px solid rgb(246, 244, 244);
+    text-align: center;
+    height: 300px;
+    width: 350px;
+}
+
+.header-in-div
+{
+    margin-top:20px;
+}
+
+.img-part
+{
+    margin-top:10px;
+}
+
+.last-section
+{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+}
+
+.image-part
+{
+    height: 700px;
+    width: 569px;
+    margin-left:30px;
+   
+}
+
+.para-part
+{
+    height: 700px;
+    width: 540px;
+    
+    
+}
+
+.last-button
+{
+    background-color:rgb(20, 238, 238);
+    padding:12px;
+    border-style: none;
+}
+
+.color-changed
+{
+    color:orange
+}
+
+.last-heading
+{
+    font-size:40px;
+    font-weight: 200px;
+    margin-bottom:20px;;
+}
+
+.last-para
+{
+    letter-spacing: 1px;
+    font-size:18px;
+    line-break: auto;
+    line-height:20px;
+}
+
+.phone
+{
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+.fa-phone-volume
+{
+    color:rgb(44, 43, 43);
+    font-size: 80px;
+    padding:10px;
+}
+
+.semi-div-footer
+{
+    display: flex;
+    color:orange;
+}
+
+.footer
+{
+    background-color: black;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:50px;
+}
+
+.head1
+{
+    margin-top:20px;
+    font-size: 25px;
+    color:rgb(213, 98, 98);
+}
+
+.para-in-footer
+{
+    color:rgb(187, 185, 183);
+    font-size: 17px;
+    font-weight: 100px;
+    line-height: 20px;
+}
+
+
+.Email
+{
+    border-style: none;
+    padding:10px;
+    background-color:rgb(169, 169, 170);
+}
+
+.img-in-footer
+{
+    margin-left:-20px;
+}
+
+.services-details
+{
+    margin-left:20px;
+    font-size:18px;
+    color:rgba(142, 142, 142, 0.831);
+    line-height: 25px;
+}
+
+.learn-more
+{
+    color:rgba(226, 224, 224, 0.831);
+    margin-bottom:10px;
+    font-size:25px;
+}
+
+.d1
+{
+    color:rgba(226, 224, 224, 0.831);
+    display: flex;
+    gap:30px;
+    font-size: 17px;
+    margin:8px;
+}
+
+.color
+{
+    color:rgb(177, 72, 72);
+}
+
+
+/* media query */
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu-class {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-image {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .mid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .first-div {
+        width: 100%;
+    }
+
+    .last-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image-part, .para-part {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu-class {
+        font-size: 20px;
+    }
+
+    .header {
+        font-size: 40px;
+    }
+
+    .para {
+        font-size: 16px;
+    }
+
+    .last-heading {
+        font-size: 30px;
+    }
+
+    .last-para {
+        font-size: 16px;
+    }
+
+    .fa-phone-volume {
+        font-size: 60px;
+    }
+
+    .head1 {
+        font-size: 20px;
+    }
+
+    .para-in-footer {
+        font-size: 15px;
+    }
+
+    .services-details {
+        font-size: 16px;
+    }
+
+    .learn-more {
+        font-size: 20px;
+    }
+
+    .d1 {
+        font-size: 15px;
+    }
+}
